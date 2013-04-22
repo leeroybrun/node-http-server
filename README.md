@@ -7,31 +7,31 @@ It can also serve static files from the `static/` folder.
 
 ## Install
 
-You can simply place the `simpleServer.js` file on your `node_modules/` folder. Then you can call it like this :
+You can simply place the `http-server` folder in your `node_modules/` folder. Then you can call it like this :
 
 ```javascript
-var simpleServer = require('simpleServer');
+var server = require('http-server');
 ```
 
 You can either place it somewhere in your project, and call it by relative path. Example if it's in the same folder as the file calling it :
 
 ```javascript
-var simpleServer = require('./simpleServer');
+var server = require('./http-server');
 ```
 
 ## Usage
 
-Once you have called the `simpleServer.js` file, you can start the server and pass the port number where you want it to pop out :
+Once you have called the `http-server` module, you can start the server and pass the port number like this :
 
 ```javascript
-var simpleServer = require('simpleServer');
-simpleServer.start(8080);
+var server = require('http-server');
+server.start(8080);
 ```
 
 Or you can directly use :
 
 ```javascript
-require('simpleServer').start(8080);
+require('http-server').start(8080);
 ```
 
 ## Routing
@@ -65,6 +65,9 @@ A route handler receive 2 parameters :
 ## Use, share & improve !
 
 This is my first Node.js project, so it's certainly not perfect. Don't hesitate to share, comment and improve !
+
+I know there is already a `http-server` module in npm, but when creating this project I had no ideas for a "creative" name...
+I juste created it for personnal use, so for now it's gonna stay like that. If someone have any idea for another name, feel free to send me an email. :-)
 
 You can contact me directly here : leeroy.brun@gmail.com
 Or on my website : http://www.leeroy.me
