@@ -61,3 +61,12 @@ A route handler receive 2 parameters :
     * info.data   --> data passed by POST or PUT
     * info.params --> array of parameters passed in the URL. Eg : with `/api/users/42/posts` your params will be `['42', 'posts']`
 * res  --> response object (instance of http.ServerResponse), used to answer to the request
+
+## Use, share & improve !
+
+This is my first Node.js project, so it's certainly not perfect. Don't hesitate to share, comment and improve !
+
+You can contact me directly here : leeroy.brun@gmail.com
+Or on my website : http://www.leeroy.me
+
+That's all folks ! Thanks for reading !
