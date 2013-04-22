@@ -13,5 +13,9 @@
     "http",
     "server"
   ],  
-  "license": "MIT"
+  "license": "MIT",
+  "engines": [
+    "node"
+  ],
+  "main": "./lib/http-server.js"
 }

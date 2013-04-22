@@ -1,1 +1,1 @@
-require('../http-server').start(process.env.PORT);
+require('http-server').start(process.env.PORT);
