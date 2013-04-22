@@ -1,0 +1,17 @@
+{
+  "name": "http-server",
+  "version": "0.1.0",
+  "author": "Leeroy Brun <leeroy.brun@gmail.com>",
+  "description": "a very simple HTTP server with routing and static files handling",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leeroybrun/node-http-server.git"
+  },
+  "keywords": [
+    "routing",
+    "static files",
+    "http",
+    "server"
+  ],  
+  "license": "MIT"
+}
