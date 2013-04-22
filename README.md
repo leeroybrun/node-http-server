@@ -7,21 +7,32 @@ It can also serve static files from the `static/` folder.
 
 ## Install
 
-You can simply place the `http-server` folder in your `node_modules/` folder. Then you can call it like this :
+Simply add this repository to your package.json dependencies :
+
+```javascript
+{
+  "name": "your-application",
+  "version": "0.1.0",
+  ...
+  "dependencies" : {
+    ...
+    "http-server"   :  "https://github.com/leeroybrun/node-http-server/tarball/master"
+  },  
+  ...
+}
+```
+
+Then make a `npm install` inside your project directory and npm will install `http-server` for you.
+
+You can then simple require it like any other module :
 
 ```javascript
 var server = require('http-server');
 ```
 
-You can either place it somewhere in your project, and call it by relative path. Example if it's in the same folder as the file calling it :
-
-```javascript
-var server = require('./http-server');
-```
-
 ## Usage
 
-Once you have called the `http-server` module, you can start the server and pass the port number like this :
+Once you have required the `http-server` module, you can start the server and pass the port number like this :
 
 ```javascript
 var server = require('http-server');
@@ -36,7 +47,7 @@ require('http-server').start(8080);
 
 ## Routing
 
-You don't have to define routes somewhere in your code. Juste create a file in the `routes/` folder and you are ready to go !
+You don't have to define routes in your code. Juste create a file in the `routes/` folder and you are ready to go !
 
 Routes works as follow : `/routeName/handler/param1/param2/...`
 
